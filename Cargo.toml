@@ -1,0 +1,21 @@
+[package]
+name = "dupefind"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Find duplicate files by content (size, then partial hash, then full SHA-256)"
+license = "MIT"
+repository = "https://github.com/yakim-nick/dupefind"
+keywords = ["duplicates", "files", "cli"]
+categories = ["command-line-utilities", "filesystem"]
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+hex = "0.4.3"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+sha2 = "0.11.1"
+walkdir = "2.5.0"
+
+[dev-dependencies]
+tempfile = "3.27.0"
