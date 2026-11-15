@@ -26,7 +26,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Install Rust (rustup is preinstalled on the runners)
-        run: rustup toolchain install stable --profile minimal --component rustfmt clippy
+        run: rustup toolchain install stable --profile minimal -c rustfmt,clippy
       - run: cargo fmt --all -- --check
       - run: cargo clippy --all-targets --locked -- -D warnings
       - run: cargo test --locked
