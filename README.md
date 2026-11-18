@@ -16,7 +16,7 @@ Group 1: 2 files, 4194304 bytes each (4194304 bytes wasted)
 
 ## Install and run
 
-Needs Rust 1.85 or newer (edition 2024).
+Needs Rust 1.88 or newer (set by the `sha2` dependency; the code itself uses edition 2024).
 
 ```bash
 git clone https://github.com/yakim-nick/dupefind && cd dupefind

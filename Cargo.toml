@@ -2,7 +2,7 @@
 name = "dupefind"
 version = "0.1.0"
 edition = "2024"
-rust-version = "1.85"
+rust-version = "1.88"
 description = "Find duplicate files by content (size, then partial hash, then full SHA-256)"
 license = "MIT"
 repository = "https://github.com/yakim-nick/dupefind"
